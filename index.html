@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TATA — Tatapan Menjadi Suara</title>
+<meta name="description" content="TATA adalah perangkat Assistive Augmentative Communication berbasis Infrared Eye Tracking untuk membantu anak autisme non-verbal berkomunikasi.">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<!-- Chart.js -->
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.1/dist/chart.umd.min.js" defer></script>
+
+<!-- Stylesheets -->
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ===================== LOADING SCREEN ===================== -->
+<div class="loading-screen" id="loadingScreen">
+  <div class="loader-content">
+    <div class="loader-logo">TATA</div>
+    <div class="loader-bar">
+      <div class="loader-progress" id="loaderProgress"></div>
+    </div>
+    <p class="loader-text">Menyiapkan pengalaman komunikasi...</p>
+  </div>
+</div>
+
+<!-- ===================== CURSOR GLOW ===================== -->
+<div class="mouse-glow" id="mouseGlow"></div>
+
+<!-- ===================== NAVBAR ===================== -->
+<nav class="navbar" id="navbar">
+  <div class="nav-container">
+    <a href="#home" class="logo">
+      <div class="logo-icon"><i class="fa-solid fa-eye"></i></div>
+      <span class="logo-text">TATA</span>
+    </a>
+
+    <ul class="nav-menu" id="navMenu">
+      <li><a href="#home" class="nav-link active">Home</a></li>
+      <li><a href="#solution" class="nav-link">Solution</a></li>
+      <li><a href="#simulation" class="nav-link">Simulation</a></li>
+      <li><a href="#dashboard" class="nav-link">Dashboard</a></li>
+      <li><a href="#technology" class="nav-link">Technology</a></li>
+      <li><a href="#impact" class="nav-link">Impact</a></li>
+      <li><a href="#team" class="nav-link">Team</a></li>
+    </ul>
+
+    <a href="#simulation" class="btn-nav-demo">
+      <span>Try Demo</span>
+      <i class="fa-solid fa-arrow-right"></i>
+    </a>
+
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<!-- ===================== SECTION 1: HERO ===================== -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+
+  <div class="hero-container">
+    <div class="hero-content reveal-up">
+      <div class="badge">
+        <i class="fa-solid fa-sparkles"></i>
+        <span>TATA Assistive Communication</span>
+      </div>
+
+      <h1 class="hero-title">
+        <span class="typing-text" id="typingText">Tatapan Menjadi Suara</span>
+      </h1>
+
+      <p class="hero-subtitle">
+        Digital AAC berbasis Eye Tracking untuk Anak Autisme Non-Verbal
+      </p>
+
+      <div class="hero-buttons">
+        <a href="#simulation" class="btn-primary ripple">
+          <i class="fa-solid fa-play"></i>
+          <span>Mulai Simulasi</span>
+        </a>
+        <a href="#technology" class="btn-secondary ripple">
+          <i class="fa-solid fa-microchip"></i>
+          <span>Pelajari Teknologi</span>
+        </a>
+      </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual reveal-up">
+      <div class="device-mockup floating">
+        <div class="device-frame">
+          <div class="device-camera"></div>
+          <div class="device-screen">
+            <div class="screen-header">
+              <span class="screen-dot"></span>
+              <span class="screen-dot"></span>
+              <span class="screen-dot"></span>
+            </div>
+            <div class="screen-grid">
+              <div class="screen-symbol"><i class="fa-solid fa-utensils"></i></div>
+              <div class="screen-symbol active"><i class="fa-solid fa-mug-hot"></i></div>
+              <div class="screen-symbol"><i class="fa-solid fa-toilet"></i></div>
+              <div class="screen-symbol"><i class="fa-solid fa-gamepad"></i></div>
+              <div class="screen-symbol"><i class="fa-solid fa-bed"></i></div>
+              <div class="screen-symbol"><i class="fa-solid fa-heart"></i></div>
+            </div>
+            <div class="screen-tracker">
+              <span class="tracker-dot"></span>
+            </div>
+          </div>
+        </div>
+        <div class="device-glow"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="scroll-indicator">
+    <span>Scroll</span>
+    <i class="fa-solid fa-chevron-down"></i>
+  </div>
+</section>
+<!-- ===================== SECTION: SOLUTION ===================== -->
+<section class="solution" id="solution">
+  <div class="section-container">
+    <div class="section-header reveal-up">
+      <span class="section-badge">Solution</span>
+      <h2 class="section-title">Fitur Utama TATA</h2>
+      <p class="section-subtitle">Dirancang khusus untuk kebutuhan komunikasi non-verbal</p>
+    </div>
+
+    <div class="solution-grid">
+      <div class="solution-card reveal-up">
+        <div class="solution-icon"><i class="fa-solid fa-eye"></i></div>
+        <h3 class="solution-title">Eye Tracking</h3>
+        <p class="solution-desc">Deteksi tatapan mata berbasis infrared dengan akurasi tinggi tanpa perlu sentuhan.</p>
+      </div>
+
+      <div class="solution-card reveal-up">
+        <div class="solution-icon"><i class="fa-solid fa-table-cells-large"></i></div>
+        <h3 class="solution-title">Adaptive Layout</h3>
+        <p class="solution-desc">Susunan simbol komunikasi menyesuaikan kebutuhan dan kemampuan setiap anak.</p>
+      </div>
+
+      <div class="solution-card reveal-up">
+        <div class="solution-icon"><i class="fa-solid fa-shapes"></i></div>
+        <h3 class="solution-title">Avatar 3D</h3>
+        <p class="solution-desc">Respon visual ekspresif yang membantu anak memahami umpan balik komunikasi.</p>
+      </div>
+
+      <div class="solution-card reveal-up">
+        <div class="solution-icon"><i class="fa-solid fa-chart-line"></i></div>
+        <h3 class="solution-title">Dashboard Monitoring</h3>
+        <p class="solution-desc">Data komunikasi tersalurkan ke orang tua dan guru secara real-time.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SECTION: SIMULATION ===================== -->
+<section class="simulation" id="simulation">
+  <div class="section-container">
+    <div class="section-header reveal-up">
+      <span class="section-badge">Simulation</span>
+      <h2 class="section-title">Coba Simulasi TATA</h2>
+      <p class="section-subtitle">Arahkan kursor ke salah satu simbol dan tahan selama satu detik untuk mensimulasikan eye tracking</p>
+    </div>
+
+    <div class="simulation-container reveal-up">
+      <div class="simulation-board">
+        <div class="communication-board" id="communicationBoard">
+          <div class="symbol-card" data-symbol="makan" data-text="Saya ingin makan">
+            <div class="symbol-progress"><svg class="progress-ring" viewBox="0 0 100 100"><circle class="progress-ring-bg" cx="50" cy="50" r="45"></circle><circle class="progress-ring-fill" cx="50" cy="50" r="45"></circle></svg></div>
+            <span class="symbol-icon">🍽️</span>
+            <span class="symbol-label">Makan</span>
+          </div>
+
+          <div class="symbol-card" data-symbol="minum" data-text="Saya ingin minum">
+            <div class="symbol-progress"><svg class="progress-ring" viewBox="0 0 100 100"><circle class="progress-ring-bg" cx="50" cy="50" r="45"></circle><circle class="progress-ring-fill" cx="50" cy="50" r="45"></circle></svg></div>
+            <span class="symbol-icon">🥤</span>
+            <span class="symbol-label">Minum</span>
+          </div>
+
+          <div class="symbol-card" data-symbol="toilet" data-text="Saya ingin ke toilet">
+            <div class="symbol-progress"><svg class="progress-ring" viewBox="0 0 100 100"><circle class="progress-ring-bg" cx="50" cy="50" r="45"></circle><circle class="progress-ring-fill" cx="50" cy="50" r="45"></circle></svg></div>
+            <span class="symbol-icon">🚽</span>
+            <span class="symbol-label">Toilet</span>
+          </div>
+
+          <div class="symbol-card" data-symbol="main" data-text="Saya ingin bermain">
+            <div class="symbol-progress"><svg class="progress-ring" viewBox="0 0 100 100"><circle class="progress-ring-bg" cx="50" cy="50" r="45"></circle><circle class="progress-ring-fill" cx="50" cy="50" r="45"></circle></svg></div>
+            <span class="symbol-icon">🎮</span>
+            <span class="symbol-label">Bermain</span>
+          </div>
+
+          <div class="symbol-card" data-symbol="tidur" data-text="Saya ingin tidur">
+            <div class="symbol-progress"><svg class="progress-ring" viewBox="0 0 100 100"><circle class="progress-ring-bg" cx="50" cy="50" r="45"></circle><circle class="progress-ring-fill" cx="50" cy="50" r="45"></circle></svg></div>
+            <span class="symbol-icon">😴</span>
+            <span class="symbol-label">Tidur</span>
+          </div>
+
+          <div class="symbol-card" data-symbol="sayang" data-text="Saya sayang kamu">
+            <div class="symbol-progress"><svg class="progress-ring" viewBox="0 0 100 100"><circle class="progress-ring-bg" cx="50" cy="50" r="45"></circle><circle class="progress-ring-fill" cx="50" cy="50" r="45"></circle></svg></div>
+            <span class="symbol-icon">❤️</span>
+            <span class="symbol-label">Sayang</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="simulation-side">
+        <div class="avatar-container">
+          <div class="avatar" id="avatar">
+            <div class="avatar-face">
+              <div class="avatar-eyes">
+                <span class="avatar-eye"></span>
+                <span class="avatar-eye"></span>
+              </div>
+              <div class="avatar-mouth" id="avatarMouth"></div>
+            </div>
+          </div>
+          <div class="speech-bubble">
+            <i class="fa-solid fa-volume-high speaker-icon" id="speakerIcon"></i>
+            <p id="speechText">Pilih simbol untuk memulai</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SECTION: DASHBOARD ===================== -->
+<section class="dashboard" id="dashboard">
+  <div class="section-container">
+    <div class="section-header reveal-up">
+      <span class="section-badge">Dashboard</span>
+      <h2 class="section-title">Dashboard Orang Tua & Guru</h2>
+      <p class="section-subtitle">Pantau perkembangan komunikasi anak secara real-time</p>
+    </div>
+
+    <div class="dashboard-container reveal-up">
+      <div class="dashboard-grid">
+        <div class="dashboard-card stat-mini">
+          <i class="fa-solid fa-comments"></i>
+          <div>
+            <h4>128</h4>
+            <p>Total Komunikasi</p>
+          </div>
+        </div>
+        <div class="dashboard-card stat-mini">
+          <i class="fa-solid fa-star"></i>
+          <div>
+            <h4>Minum</h4>
+            <p>Simbol Favorit</p>
+          </div>
+        </div>
+        <div class="dashboard-card stat-mini">
+          <i class="fa-solid fa-arrow-trend-up"></i>
+          <div>
+            <h4>+23%</h4>
+            <p>Progress Mingguan</p>
+          </div>
+        </div>
+        <div class="dashboard-card stat-mini">
+          <i class="fa-solid fa-clock"></i>
+          <div>
+            <h4>4.2 jam</h4>
+            <p>Rata-rata Penggunaan</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="dashboard-main-grid">
+        <div class="dashboard-card chart-card">
+          <h4>Grafik Komunikasi Mingguan</h4>
+          <div class="chart-container">
+            <canvas id="weeklyChart"></canvas>
+          </div>
+        </div>
+
+        <div class="dashboard-card chart-card">
+          <h4>Distribusi Simbol</h4>
+          <div class="chart-container">
+            <canvas id="symbolChart"></canvas>
+          </div>
+        </div>
+      </div>
+
+      <div class="dashboard-card history-card">
+        <h4>Riwayat Komunikasi</h4>
+        <ul class="history-list" id="historyList">
+          <li><span class="history-icon">🥤</span><span>Saya ingin minum</span><span class="history-time">08:32</span></li>
+          <li><span class="history-icon">🍽️</span><span>Saya ingin makan</span><span class="history-time">10:15</span></li>
+          <li><span class="history-icon">🎮</span><span>Saya ingin bermain</span><span class="history-time">13:47</span></li>
+          <li><span class="history-icon">😴</span><span>Saya ingin tidur</span><span class="history-time">19:20</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SECTION: TECHNOLOGY ===================== -->
+<section class="technology" id="technology">
+  <div class="section-container">
+    <div class="section-header reveal-up">
+      <span class="section-badge">Technology</span>
+      <h2 class="section-title">Arsitektur Teknologi</h2>
+      <p class="section-subtitle">Alur data dari perangkat keras hingga dashboard web</p>
+    </div>
+
+    <div class="tech-flow reveal-up">
+      <div class="tech-node">
+        <div class="tech-node-icon"><i class="fa-solid fa-camera"></i></div>
+        <span>Infrared Camera</span>
+      </div>
+      <div class="tech-arrow"><i class="fa-solid fa-arrow-down"></i></div>
+
+      <div class="tech-node">
+        <div class="tech-node-icon"><i class="fa-brands fa-raspberry-pi"></i></div>
+        <span>Raspberry Pi</span>
+      </div>
+      <div class="tech-arrow"><i class="fa-solid fa-arrow-down"></i></div>
+
+      <div class="tech-node">
+        <div class="tech-node-icon"><i class="fa-solid fa-eye"></i></div>
+        <span>Eye Tracking Engine</span>
+      </div>
+      <div class="tech-arrow"><i class="fa-solid fa-arrow-down"></i></div>
+
+      <div class="tech-node">
+        <div class="tech-node-icon"><i class="fa-solid fa-table-cells"></i></div>
+        <span>Adaptive Layout</span>
+      </div>
+      <div class="tech-arrow"><i class="fa-solid fa-arrow-down"></i></div>
+
+      <div class="tech-node">
+        <div class="tech-node-icon"><i class="fa-solid fa-volume-high"></i></div>
+        <span>Text To Speech</span>
+      </div>
+      <div class="tech-arrow"><i class="fa-solid fa-arrow-down"></i></div>
+
+      <div class="tech-node">
+        <div class="tech-node-icon"><i class="fa-solid fa-cloud"></i></div>
+        <span>Cloud</span>
+      </div>
+      <div class="tech-arrow"><i class="fa-solid fa-arrow-down"></i></div>
+
+      <div class="tech-node">
+        <div class="tech-node-icon"><i class="fa-solid fa-desktop"></i></div>
+        <span>Web Dashboard</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SECTION: TEAM ===================== -->
+<section class="team" id="team">
+  <div class="section-container">
+    <div class="section-header reveal-up">
+      <span class="section-badge">Team</span>
+      <h2 class="section-title">Tim Pengembang TATA</h2>
+      <p class="section-subtitle">Fakultas Teknik</p>
+    </div>
+
+    <div class="team-grid">
+      <div class="team-card reveal-up">
+        <div class="team-avatar"><i class="fa-solid fa-user"></i></div>
+        <h4>Siti Fitria Yuliani</h4>
+        <p>Teknik Elektro</p>
+      </div>
+      <div class="team-card reveal-up">
+        <div class="team-avatar"><i class="fa-solid fa-user"></i></div>
+        <h4>Andi Alia Apriyani</h4>
+        <p>Teknik Elektro</p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ===================== SECTION 9: FOOTER ===================== -->
+<footer class="footer">
+  <div class="section-container">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <div class="logo-icon"><i class="fa-solid fa-eye"></i></div>
+        <span class="logo-text">TATA</span>
+        <p>Tatapan Menjadi Suara</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#problem">Problem</a>
+        <a href="#solution">Solution</a>
+        <a href="#simulation">Simulation</a>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#technology">Technology</a>
+        <a href="#team">Team</a>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; 2026 TATA — Universitas Negeri Semarang</p>
+      <p>Fakultas Teknik</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Audio elements for TTS fallback -->
+<audio id="clickSound" preload="auto"></audio>
+
+<!-- Scripts -->
+<script src="js/app.js"></script>
+<script src="js/simulation.js"></script>
+<script src="js/dashboard.js"></script>
+</body>
+</html>
